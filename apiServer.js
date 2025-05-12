@@ -3,11 +3,9 @@ var cors = require('cors');
 const app = express();
 const port = 3000;
 
-// These lines will be explained in detail later in the unit
 app.use(express.json());// process json
 app.use(express.urlencoded({ extended: true })); 
 app.use(cors());
-// These lines will be explained in detail later in the unit
 
 const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://CQUpass:admin@cluster0.pvzye.mongodb.net/?retryWrites=true&w=majority";
@@ -33,7 +31,7 @@ connectDB();
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Have a nice day!');
 })
 
  
